@@ -12,7 +12,7 @@ function setLoadingFalse() {
 
 async function fetchUsers() {
   setLoadingTrue();
-  const BASE_URL = `https://cors-anywhere.herokuapp.com/https://randomuser.me/api/?results=50`;
+  const BASE_URL = `https://randomuser.me/api/?results=50`;
   const res = await fetch(`${BASE_URL}`);
   const json = await res.json();
   console.log(json);
